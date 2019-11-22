@@ -1,5 +1,4 @@
-#include <GL/glew.h>
-#include <GL/gl.h>
+#include <GLES2/gl2.h>
 #include "nanovg.h"
 #define NANOVG_GLES2_IMPLEMENTATION
 #include "nanovg_gl.h"
