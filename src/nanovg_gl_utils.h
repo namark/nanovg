@@ -18,6 +18,10 @@
 #ifndef NANOVG_GL_UTILS_H
 #define NANOVG_GL_UTILS_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 struct NVGLUframebuffer {
 	NVGcontext* ctx;
 	GLuint fbo;
@@ -31,6 +35,10 @@ typedef struct NVGLUframebuffer NVGLUframebuffer;
 void nvgluBindFramebuffer(NVGLUframebuffer* fb);
 NVGLUframebuffer* nvgluCreateFramebuffer(NVGcontext* ctx, int w, int h, int imageFlags);
 void nvgluDeleteFramebuffer(NVGLUframebuffer* fb);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // NANOVG_GL_UTILS_H
 
